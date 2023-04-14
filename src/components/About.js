@@ -11,10 +11,10 @@ function About() {
                 <p className="text-navgrey text-base mb-2 w-96">Some of my qualities and skills are: speaking <span className="text-secondary">fluent Dutch </span> and English, helping and learning other people and being open to new things.</p>
                 <p className="text-navgrey text-base mb-10 w-96">I expect that after this training I have acquired a lot of knowledge and skills of the software development profession and that I can further develop myself in this field.</p>
                 <p className="text-headergrey text-2xl mb-6">Languages i work with</p>
-                <img className="h-28" src={languages}/>
+                <img alt="languages" className="h-28" src={languages}/>
             </div>
             <div>
-                <img className="h-124 rounded-lg ml-6" src={chunfoto}/>
+                <img alt="chunfoto" className="h-124 rounded-lg ml-6" src={chunfoto}/>
             </div>
         </div>
     );
