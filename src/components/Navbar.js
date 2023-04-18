@@ -9,7 +9,7 @@ function Navbar() {
                 <BrowserRouter>
                     <div className="flex items-center justify-between mt-auto bg-white bg-opacity-95">
                         <div>
-                            <a href="#" className="text-lg m-6">Chun-Hin Ip</a>
+                            <p className="text-lg m-6">Chun-Hin Ip</p>
                         </div>
                         <div className="flex items-baseline space-x-4 m-6">
                             <Link to="#About" smooth className="text-navgrey font-lato hover:text-secondary px-3 py-2 rounded-md text-base font-medium">About</Link>
