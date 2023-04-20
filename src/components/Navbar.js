@@ -1,24 +1,54 @@
-import React from 'react';
+import React, {useState} from 'react';
 import cv from '../files/CVCHUN.pdf';
 import { BrowserRouter } from "react-router-dom";
 import { HashLink as Link } from "react-router-hash-link";
+import {AiOutlineClose, AiOutlineMenu} from 'react-icons/ai'
+
 
 function Navbar() {
+    const [nav, setNav] = useState(false)
+
+    const handleNav = () => {
+        setNav(!nav)
+    }
+
     return (
-            <nav className="sticky top-0">
-                <BrowserRouter>
-                    <div className="flex items-center justify-between mt-auto bg-white bg-opacity-95">
-                        <div>
-                            <p className="text-lg m-6">Chun-Hin Ip</p>
-                        </div>
-                        <div className="flex items-baseline space-x-4 m-6">
-                            <Link to="#About" smooth className="text-navgrey font-lato hover:text-secondary px-3 py-2 rounded-md text-base font-medium">About</Link>
-                            <Link to="#Contact" smooth className="text-navgrey font-lato hover:text-secondary px-3 py-2 rounded-md text-base font-medium">Contact</Link>
-                            <a href={cv} className="text-navgrey font-lato hover:bg-secondary hover:text-white hover:border-white px-3 py-2 rounded-md text-base font-medium border border-navgrey">Resume</a>
-                        </div>
-                    </div>
-                </BrowserRouter>
-            </nav>
+        <div className="flex justify-between items-center h-24 max-w mx-auto px-8 text-white sticky top-0 bg-[#000300] opacity-95">
+            <h1 className="w-full text-3xl font-bold text-[#00df9a]">CHUNHIN.</h1>
+                <ul className="hidden md:flex">
+                    <BrowserRouter>
+                        <li className="p-4 hover:text-[#00df9a] hover:cursor-pointer">
+                            <Link to="#About" smooth>About</Link>
+                        </li>
+                        <li className="p-4 hover:text-[#00df9a] hover:cursor-pointer">
+                            <Link to="#Contact" smooth>Contact</Link>
+                        </li>
+                        <li className="p-4 hover:text-[#00df9a] hover:cursor-pointer">
+                            <a href={cv}>Resume</a>
+                        </li>
+                    </BrowserRouter>
+                </ul>
+            <div onClick={handleNav} className="block md:hidden">
+                {!nav ? <AiOutlineMenu size={20}/> : <AiOutlineClose size={20}/>}
+            </div>
+            <div className={nav ? "fixed left-0 top-0 w-[60%] h-full border-r border-r-gray-900 bg-[#000300] ease-in-out duration-500" : "fixed left-[-100%]"}>
+                <h1 className="w-full text-3xl font-bold text-[#00df9a] m-4">CHUNHIN.</h1>
+                <ul className="uppercase p-4">
+                    <BrowserRouter>
+                        <li className="p-4 border-b border-gray-600 hover:text-[#00df9a] hover:cursor-pointer">
+                            <Link to="#About" smooth>About</Link>
+                        </li>
+                        <li className="p-4 border-b border-gray-600 hover:text-[#00df9a] hover:cursor-pointer">
+                            <Link to="#Contact" smooth>Contact</Link>
+                        </li>
+                        <li className="p-4 border-b border-gray-600 hover:text-[#00df9a] hover:cursor-pointer">
+                            <a href={cv}>Resume</a>
+                        </li>
+                    </BrowserRouter>
+                </ul>
+            </div>
+        </div>
     );
+
 }
 export default Navbar;

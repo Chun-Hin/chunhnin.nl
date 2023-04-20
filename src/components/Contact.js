@@ -2,11 +2,13 @@ import React from "react";
 
 function Contact() {
     return(
-        <div className="flex justify-center" id="Contact">
-            <div className="break-normal text-center align-super">
-                <p className="text-headergrey text-5xl mb-3">Contact.</p>
-                <p className="text-navgrey text-lg w-104 mb-4">You can always contact my by sending me an <span className="text-secondary">e-mail</span>. Whether you have a question or just want to say hi, I’ll try my best to get back to you!</p>
-                <a className="text-navgrey font-lato hover:bg-secondary hover:text-white hover:border-white px-5 py-3 rounded-md text-base font-medium border border-navgrey" href="mailto:chunhin.ip05@gmail.com">Say hello</a>
+        <div className="w-full py-16 text-white px-4 text-center flex flex-col justify-center" id="Contact">
+            <div className="max-w-[1240px] mx-auto">
+                <div className="lg:col-span-2 my-4">
+                    <h1 className="md:text-4xl sm:text-3xl text-2xl font-bold py-2">Dou you want to contact me?</h1>
+                    <p className="max-w-[500px]">You can always contact my by sending me an e-mail. Whether you have a question or just want to say hi, I’ll try my best to get back to you!</p>
+                    <button className="bg-[#00df9a] text-black rounded-md font-medium w-[200px] ml-4 my-6 py-3">Say Hi!</button>
+                </div>
             </div>
         </div>
     );

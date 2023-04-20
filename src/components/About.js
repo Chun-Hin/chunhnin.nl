@@ -1,20 +1,24 @@
 import React from 'react';
-import languages from '../images/languages.png'
 import chunfoto from '../images/chunfoto.JPG'
 
 function About() {
     return (
-        <div className="flex justify-around p-5 scroll-mt-32" id="About">
-            <div className="mr-6">
-                <p className="text-headergrey text-4xl mb-6">About.</p>
-                <p className="text-navgrey text-base mb-2 w-96">My name is Chun-Hin and I am 17 years old. I study at the Deltion college in Zwolle and I do the <span className="text-secondary"> MBO software development level 4. </span></p>
-                <p className="text-navgrey text-base mb-2 w-96">Some of my qualities and skills are: speaking <span className="text-secondary">fluent Dutch </span> and English, helping and learning other people and being open to new things.</p>
-                <p className="text-navgrey text-base mb-10 w-96">I expect that after this training I have acquired a lot of knowledge and skills of the software development profession and that I can further develop myself in this field.</p>
-                <p className="text-headergrey text-2xl mb-6">Languages i work with</p>
-                <img alt="languages" className="h-28" src={languages}/>
-            </div>
-            <div>
-                <img alt="chunfoto" className="h-124 rounded-lg ml-6" src={chunfoto}/>
+        <div className="w-full bg-white py-16 px-4" id="About">
+            <div className="max-w-[1240px] mx-auto grid md:grid-cols-2">
+                <img className="w-[450px] mx-auto my-4 rounded-lg" src={chunfoto} alt="/" />
+                <div className="flex flex-col justify-center">
+                    <p className="text-[#00df9a] font-bold">ABOUT.</p>
+                    <h1 className="md:text-3xl sm:text-2xl text-1xl font-bold py-2">Something about myself</h1>
+                    <p className=" ">
+                        My name is Chun-Hin and I am 17 years old. I study at the Deltion college in Zwolle and I do the MBO software development level 4.
+                    </p>
+                    <p className=" ">
+                        Some of my qualities and skills are: speaking fluent Dutch and English, helping and learning other people and being open to new things.
+                    </p>
+                    <p className=" ">
+                        I expect that after this training I have acquired a lot of knowledge and skills of the software development profession and that I can further develop myself in this field.
+                    </p>
+                </div>
             </div>
         </div>
     );
