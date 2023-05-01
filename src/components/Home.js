@@ -27,7 +27,7 @@ function Home() {
                 </div>
                 <p className="md:text-2xl text-xl font-bold text-gray-500 px-4">I’m a 2nd year student software
                     developer located at Deltion College in Zwolle. Currently, I’m learning everything about
-                    coding..</p>
+                    coding.</p>
             </div>
         </div>
     );
