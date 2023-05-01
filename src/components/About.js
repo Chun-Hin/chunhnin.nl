@@ -10,7 +10,7 @@ function About() {
                     <p className="text-[#00df9a] font-bold">ABOUT.</p>
                     <h1 className="md:text-3xl sm:text-2xl text-1xl font-bold py-2">Something about myself</h1>
                     <p className="py-2">
-                        My name is Chun-Hin and I am 17 years old. I study at the Deltion college in Zwolle and I do the MBO software development level 4.
+                        My name is Chun-Hin and I am 17 years old. I study Software Development (Level 4) at the Deltion college in Zwolle.
                     </p>
                     <p className="py-2">
                         Some of my qualities and skills are: speaking fluent Dutch and English, helping and learning other people and being open to new things.
