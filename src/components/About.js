@@ -1,5 +1,6 @@
 import React from 'react';
 import chunfoto from '../images/chunfoto.JPG'
+import languages from '../images/languages.JPG'
 
 function About() {
     return (
@@ -18,6 +19,8 @@ function About() {
                     <p className="py-2 pb-4">
                         I expect that after this training I have acquired a lot of knowledge and skills of the software development profession and that I can further develop myself in this field.
                     </p>
+                    <h1 className="md:text-3xl sm:text-2xl text-1xl font-bold pt-6">Languages i work with</h1>
+                    <img className="w-[825px] mx-auto my-4 rounded-lg" src={languages} alt="/" />
                 </div>
             </div>
         </div>
