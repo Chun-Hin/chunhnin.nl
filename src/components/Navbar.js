@@ -13,7 +13,7 @@ function Navbar() {
     }
 
     return (
-        <div className="flex justify-between items-center h-24 max-w mx-auto px-8 text-white sticky top-0 bg-[#000300] opacity-95">
+        <div className="flex justify-between items-center h-24 max-w mx-auto px-8 text-white sticky top-0 bg-[#000300] opacity-90">
             <h1 className="w-full text-3xl font-bold text-[#00df9a]">CHUNHIN.</h1>
                 <ul className="hidden md:flex">
                     <BrowserRouter>
