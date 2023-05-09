@@ -1,5 +1,5 @@
 import React from 'react';
-import chunfoto from '../images/chunfoto.JPG'
+import chunfoto from '../images/chunfoto.jpg'
 import languages from '../images/programlang.png'
 
 function About() {
