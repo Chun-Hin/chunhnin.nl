@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import cv from '../files/CVCHUN.pdf';
+import cv from '../files/ChunCV.pdf';
 import { BrowserRouter } from "react-router-dom";
 import { HashLink as Link } from "react-router-hash-link";
 import {AiOutlineClose, AiOutlineMenu} from 'react-icons/ai'
