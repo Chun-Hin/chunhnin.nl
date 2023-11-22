@@ -2,7 +2,7 @@ import React from 'react';
 import chunfoto from '../images/chunfoto.jpg'
 import languages from '../images/programlang.png'
 
-function About() {
+function About(){
     return (
         <div className="w-full bg-white py-16 px-4 scroll-mt-20" id="About">
             <div className="max-w-[1240px] mx-auto grid md:grid-cols-2">
