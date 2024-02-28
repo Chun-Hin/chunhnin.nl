@@ -18,7 +18,7 @@ function Home() {
                     </p>
                     <span className="md:text-5xl sm:text-2xl text-xl font-bold md:pl-4 pl-2 text-gray-300 -ml-1">
                         <Typewriter
-                            words={['internet.', 'web.', 'net.']}
+                            words={['WWW.', 'web.', 'net.']}
                             loop={0}
                             typeSpeed={100}
                             deleteSpeed={75}
