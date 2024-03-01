@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import { BrowserRouter } from "react-router-dom";
 import { HashLink as Link } from "react-router-hash-link";
 import {AiOutlineClose, AiOutlineMenu} from 'react-icons/ai'
-import cv from '../files/Chun_CV.pdf'
+import cv from '../files/ChunCV.pdf'
 
 
 function Navbar() {
